@@ -225,7 +225,7 @@ body {
     color: var(--primary-color);
 }
 
-.main-nav a.active::after {
+.main-nav a::after {
     content: '';
     position: absolute;
     bottom: -17px;
@@ -234,7 +234,16 @@ body {
     height: 3px;
     background-color: var(--primary-color);
     border-radius: 2px;
+    transform: scaleX(0); /* Hidden by default */
+    transition: transform 0.3s ease;
+    transform-origin: left;
 }
+
+/* Show underline only when active */
+.main-nav a.active::after {
+    transform: scaleX(1);
+}
+
 
 
 .content-section {
