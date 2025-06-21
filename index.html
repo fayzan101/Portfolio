@@ -349,5 +349,18 @@
     </main>
   </div>
   <script src="script.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const navLinks = document.querySelectorAll("nav li a");
+  
+      navLinks.forEach(link => {
+        link.addEventListener("click", function () {
+          navLinks.forEach(item => item.classList.remove("active")); // Remove from all
+          this.classList.add("active"); // Add to clicked
+        });
+      });
+    });
+  </script>
+  
 </body>
 </html>
