@@ -569,4 +569,106 @@ body {
   .download-resume-btn a:hover {
     background-color: #0056b3;
   }
+  /* Responsive Tweaks */
+@media (max-width: 768px) {
+    .body, .container {
+      padding: 1rem;
+    }
+  
+    .profile-header,
+    .profile-card-top {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .profile-pic {
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  
+    .contact-btn {
+      position: static;
+      margin-top: 1rem;
+    }
+  
+    .card-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+  
+    .main-nav ul {
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .services-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .portfolio-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .contact-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .resume-title {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 0.5rem;
+    }
+  
+    .skills-list {
+      flex-direction: column;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .active-section-title {
+      font-size: 1.5rem;
+    }
+  
+    .profile-info h1 {
+      font-size: 1.4rem;
+    }
+  
+    .contact-btn,
+    .submit-btn,
+    .download-resume-btn a {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .form-group input,
+    .form-group textarea {
+      font-size: 0.9rem;
+    }
+  
+    .contact-icon-wrapper {
+      width: 40px;
+      height: 40px;
+    }
+  
+    .contact-icon-wrapper i {
+      font-size: 1rem;
+    }
+  
+    .project-info h4,
+    .service-info h4 {
+      font-size: 1rem;
+    }
+  
+    .resume-card {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .card-content h4 {
+      font-size: 1rem;
+    }
+  }
+  
     
