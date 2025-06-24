@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --primary-color: #ffc107; /* Yellow accent */
+    --primary-color: #078bff; /* Yellow accent */
     --background-color: #121212; /* Very dark grey, almost black */
     --card-background: #1e1e1e; /* Dark grey for cards */
     --text-color: #e0e0e0; /* Light grey text */
