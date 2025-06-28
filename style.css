@@ -13,8 +13,8 @@ html {
     --border-radius: 20px;
     --container-padding: 1rem;
     --card-padding: 1.5rem;
-    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    --gradient-primary: linear-gradient(135deg, #2196F3 0%, #21CBF3 100%);
+    --gradient-secondary: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
     --shadow-light: 0 4px 15px rgba(0, 0, 0, 0.1);
     --shadow-medium: 0 10px 30px rgba(0, 0, 0, 0.2);
     --shadow-heavy: 0 20px 40px rgba(0, 0, 0, 0.3);
@@ -980,7 +980,7 @@ body::before {
 .form-group textarea:focus {
     border-color: var(--primary-color);
     outline: none;
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
     transform: translateY(-1px);
 }
 
@@ -1090,11 +1090,11 @@ body::before {
 
 /* Glow Effect */
 .glow {
-    box-shadow: 0 0 20px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 0 20px rgba(33, 150, 243, 0.3);
 }
 
 .glow:hover {
-    box-shadow: 0 0 30px rgba(102, 126, 234, 0.5);
+    box-shadow: 0 0 30px rgba(33, 150, 243, 0.5);
 }
 
 /* Tablet Styles */

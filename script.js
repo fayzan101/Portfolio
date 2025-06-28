@@ -5,13 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const contactBtn = document.querySelector('.contact-btn');
     const contactContainer = document.querySelector('.contact-details-container');
 
-    // Add floating animation to profile picture
+    
     const profilePic = document.querySelector('.profile-pic');
     if (profilePic) {
         profilePic.classList.add('floating');
     }
 
-    // Add glow effect to main cards
+  
     const mainCards = document.querySelectorAll('.profile-card, .content-card');
     mainCards.forEach(card => {
         card.classList.add('glow');
@@ -30,19 +30,19 @@ document.addEventListener('DOMContentLoaded', () => {
             navLinks.forEach(nav => nav.classList.remove('active'));
             link.classList.add('active');
 
-            // Update section title with typing effect
+            
             const newTitle = link.dataset.title;
             if (sectionTitleElement) {
                 typeWriter(sectionTitleElement, newTitle);
             }
 
-            // Show the clicked section, hide others
+            
             const targetId = link.getAttribute('href').substring(1);
             contentSections.forEach(section => {
                 section.classList.toggle('hidden', section.id !== targetId);
             });
 
-            // Scroll down a bit to show the content
+            
             setTimeout(() => {
                 const contentCard = document.querySelector('.content-card');
                 if (contentCard) {
@@ -58,11 +58,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Typing effect function
+    
     function typeWriter(element, text) {
         element.textContent = '';
         let i = 0;
-        const speed = 50; // typing speed in milliseconds
+        const speed = 50; 
         
         function type() {
             if (i < text.length) {
@@ -74,14 +74,14 @@ document.addEventListener('DOMContentLoaded', () => {
         type();
     }
 
-    // Show/Hide contact section with enhanced animation
+    
     if (contactBtn && contactContainer) {
         contactBtn.addEventListener('click', () => {
             contactContainer.classList.toggle('visible');
             const isVisible = contactContainer.classList.contains('visible');
             contactBtn.textContent = isVisible ? 'Hide Contacts' : 'Show Contacts';
             
-            // Add animation to button
+            
             contactBtn.style.transform = 'scale(0.95)';
             setTimeout(() => {
                 contactBtn.style.transform = '';
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Add scroll animations to elements
+   
     const observerOptions = {
         threshold: 0.1,
         rootMargin: '0px 0px -50px 0px'
@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    // Observe all cards and sections for scroll animations
+    
     const animatedElements = document.querySelectorAll('.service-card, .skill-card, .resume-card, .project-card, .certification-card');
     animatedElements.forEach(el => {
         el.style.opacity = '0';
@@ -142,7 +142,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Enhanced form interactions
+    
     const formInputs = document.querySelectorAll('.form-group input, .form-group textarea');
     formInputs.forEach(input => {
         input.addEventListener('focus', () => {
@@ -156,14 +156,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Add loading state to submit button
+    
     const submitBtn = document.querySelector('.submit-btn');
     if (submitBtn) {
         submitBtn.addEventListener('click', () => {
             submitBtn.classList.add('loading');
             submitBtn.textContent = 'Sending...';
             
-            // Simulate form submission (remove in production)
+            
             setTimeout(() => {
                 submitBtn.classList.remove('loading');
                 submitBtn.textContent = 'Message Sent!';
@@ -174,7 +174,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Swiper support if skills-slider exists
     if (document.querySelector('.skills-slider')) {
         const swiper = new Swiper('.skills-slider', {
             loop: false,
@@ -202,10 +201,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Add keyboard navigation
+    
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape') {
-            // Close contact details if open
+          
             if (contactContainer && contactContainer.classList.contains('visible')) {
                 contactContainer.classList.remove('visible');
                 contactBtn.textContent = 'Show Contacts';
@@ -213,7 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Add touch gestures for mobile
+    
     let touchStartX = 0;
     let touchEndX = 0;
 
@@ -232,10 +231,9 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (Math.abs(diff) > swipeThreshold) {
             if (diff > 0) {
-                // Swipe left - could be used for navigation
                 console.log('Swiped left');
             } else {
-                // Swipe right - could be used for navigation
+               
                 console.log('Swiped right');
             }
         }
