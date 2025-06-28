@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --primary-color: #ffffff; 
-    --background-color: #121212;
-    --card-background: #1e1e1e; 
-    --text-color: #e0e0e0; 
-    --text-secondary: #a0a0a0; 
+    --primary-color: #000000; 
+    --background-color: #ffffff;
+    --card-background: #f8f9fa; 
+    --text-color: #333333; 
+    --text-secondary: #666666; 
     --border-radius: 20px;
     --container-padding: 1rem;
     --card-padding: 1.5rem;
@@ -67,40 +67,40 @@ body {
 .profile-info h1 {
     font-size: 1.8rem;
     font-weight: 600;
-    color: #fff;
+    color: #000;
     margin-bottom: 0.5rem;
 }
 
 .profile-info p {
     font-size: 1rem;
-    background-color: #2a2a2a;
+    background-color: #e9ecef;
     color: var(--text-secondary);
     padding: 0.3rem 0.8rem;
     border-radius: 10px;
     display: inline-block;
-    box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .contact-btn {
     background-color: var(--primary-color);
-    color: #000;
+    color: #fff;
     border: none;
     padding: 0.8rem 1.5rem;
     border-radius: 15px;
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 200px;
 }
 
 .contact-btn:hover {
-    background-color: #f0f0f0;
+    background-color: #333;
 }
 
 .contact-details-container {
-    border-top: 1px solid #333;
+    border-top: 1px solid #dee2e6;
     margin-top: 1.5rem;
     padding-top: 1.5rem;
     max-height: 0;
@@ -119,7 +119,7 @@ body {
     grid-template-columns: 1fr;
     gap: 1.5rem;
     padding-bottom: 1.5rem;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #dee2e6;
 }
 
 .contact-item {
@@ -130,7 +130,7 @@ body {
 }
 
 .contact-icon-wrapper {
-    background: #2a2a2a;
+    background: #e9ecef;
     border-radius: 12px;
     width: 50px;
     height: 50px;
@@ -197,7 +197,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #dee2e6;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
 }
@@ -205,7 +205,7 @@ body {
 .active-section-title {
     font-size: 1.8rem;
     font-weight: 700;
-    color: #fff;
+    color: #000;
     text-align: center;
 }
 
@@ -232,7 +232,7 @@ body {
 .main-nav a:hover,
 .main-nav a.active {
     color: var(--primary-color);
-    background-color: #2a2a2a;
+    background-color: #e9ecef;
 }
 
 .main-nav a::after {
@@ -280,7 +280,7 @@ body {
 .section-title {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #fff;
+    color: #000;
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -292,7 +292,7 @@ body {
 }
 
 .service-card {
-    background-color: #2a2a2a;
+    background-color: #ffffff;
     border-radius: var(--border-radius);
     padding: 1.5rem;
     display: flex;
@@ -301,15 +301,16 @@ body {
     text-align: center;
     gap: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #dee2e6;
 }
 
 .service-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
 }
 
 .service-icon-container {
-    background-color: #1e1e1e;
+    background-color: #f8f9fa;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -326,7 +327,7 @@ body {
 .service-info h4 {
     font-size: 1.2rem;
     font-weight: 600;
-    color: #fff;
+    color: #000;
     margin-bottom: 0.5rem;
 }
 
@@ -349,7 +350,7 @@ body {
 }
 
 .skill-card {
-    background-color: #2a2a2a;
+    background-color: #ffffff;
     border-radius: var(--border-radius);
     padding: 1rem;
     display: flex;
@@ -358,6 +359,7 @@ body {
     gap: 0.8rem;
     transition: transform 0.2s ease;
     text-align: center;
+    border: 1px solid #dee2e6;
 }
 
 .skill-card:hover {
@@ -392,7 +394,7 @@ body {
 }
 
 .resume-icon-wrapper {
-    background-color: #2a2a2a;
+    background-color: #e9ecef;
     width: 45px;
     height: 45px;
     border-radius: 12px;
@@ -413,20 +415,21 @@ body {
 }
 
 .resume-card {
-    background-color: #2a2a2a;
+    background-color: #ffffff;
     padding: 1.5rem;
     border-left: 5px solid var(--primary-color);
     border-radius: var(--border-radius);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
     gap: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #dee2e6;
 }
 
 .resume-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
 .resume-card.wide {
@@ -440,7 +443,7 @@ body {
 }
 
 .card-content h4 {
-    color: #fff;
+    color: #000;
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 0.3rem;
@@ -478,7 +481,7 @@ body {
 }
 
 .project-card {
-    background-color: #2a2a2a;
+    background-color: #ffffff;
     border-radius: var(--border-radius);
     padding: 1.5rem;
     text-decoration: none;
@@ -487,12 +490,13 @@ body {
     flex-direction: column;
     gap: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border: 1px solid #dee2e6;
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(255, 193, 7, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .project-icon {
@@ -505,7 +509,7 @@ body {
     font-size: 1.2rem;
     font-weight: 600;
     margin-bottom: 0.3rem;
-    color: #fff;
+    color: #000;
     text-align: center;
 }
 
@@ -525,24 +529,25 @@ body {
 }
 
 .certification-card {
-    background-color: #2a2a2a;
+    background-color: #ffffff;
     border-radius: var(--border-radius);
     padding: 1.5rem;
     display: flex;
     flex-direction: column;
     gap: 1rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     border-left: 4px solid var(--primary-color);
+    border: 1px solid #dee2e6;
 }
 
 .certification-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(255, 193, 7, 0.3);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .certification-icon {
-    background-color: #1e1e1e;
+    background-color: #f8f9fa;
     border-radius: 50%;
     width: 60px;
     height: 60px;
@@ -560,7 +565,7 @@ body {
 .certification-info h4 {
     font-size: 1.2rem;
     font-weight: 600;
-    color: #fff;
+    color: #000;
     margin-bottom: 0.5rem;
 }
 
@@ -623,24 +628,24 @@ body {
 .form-group label {
     font-weight: 600;
     margin-bottom: 0.4rem;
-    color: #ffffff;
+    color: #000;
 }
 
 .form-group input,
 .form-group textarea {
     padding: 0.8rem;
-    border: 1px solid #333;
+    border: 1px solid #dee2e6;
     border-radius: 8px;
     font-size: 1rem;
-    background-color: #1e1e1e;
-    color: #ffffff;
+    background-color: #ffffff;
+    color: #000;
     transition: border 0.3s;
     width: 100%;
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: #bbbbbb;
+    color: #999;
 }
 
 .form-group input:focus,
@@ -652,18 +657,18 @@ body {
 .submit-btn {
     padding: 1rem 2rem;
     background-color: var(--primary-color);
-    color: #000;
+    color: #fff;
     border: none;
     border-radius: 15px;
     font-weight: 500;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     width: 100%;
 }
 
 .submit-btn:hover {
-    background-color: #f0f0f0;
+    background-color: #333;
 }
 
 .download-resume-btn {
@@ -673,7 +678,7 @@ body {
 
 .download-resume-btn a {
     background-color: var(--primary-color);
-    color: #000;
+    color: #fff;
     text-decoration: none;
     padding: 1rem 2rem;
     border-radius: 15px;
@@ -682,11 +687,11 @@ body {
     align-items: center;
     gap: 0.5rem;
     transition: background-color 0.3s ease;
-    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
 .download-resume-btn a:hover {
-    background-color: #f0f0f0;
+    background-color: #333;
 }
 
 /* Tablet Styles */
