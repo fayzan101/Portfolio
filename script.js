@@ -24,8 +24,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 section.classList.toggle('hidden', section.id !== targetId);
             });
 
-            // Scroll to top of the section
-            window.scrollTo({ top: 0, behavior: 'smooth' });
+            // Scroll down a bit to show the content
+            setTimeout(() => {
+                const contentCard = document.querySelector('.content-card');
+                if (contentCard) {
+                    const cardTop = contentCard.offsetTop;
+                    const scrollTarget = cardTop - 80; // 80px above the content card
+                    
+                    window.scrollTo({ 
+                        top: scrollTarget, 
+                        behavior: 'smooth' 
+                    });
+                }
+            }, 50);
         });
     });
 
